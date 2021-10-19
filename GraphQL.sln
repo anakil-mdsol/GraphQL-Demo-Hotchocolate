@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQL.Services", "GraphQL.Services\GraphQL.Services.csproj", "{003C63A1-35B5-4C48-8E3B-C91E58B690A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQL.Models", "GraphQL.Models\GraphQL.Models.csproj", "{7D5978E0-6AD4-4A09-9699-B1071AC726EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQL.Data", "GraphQL.Data\GraphQL.Data.csproj", "{47409435-044B-4552-8226-2E996098C351}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQL.API", "GraphQL.Api\GraphQL.API.csproj", "{17F5F37B-0F36-4A29-AF9D-C6DE150915CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{003C63A1-35B5-4C48-8E3B-C91E58B690A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{003C63A1-35B5-4C48-8E3B-C91E58B690A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{003C63A1-35B5-4C48-8E3B-C91E58B690A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{003C63A1-35B5-4C48-8E3B-C91E58B690A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D5978E0-6AD4-4A09-9699-B1071AC726EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D5978E0-6AD4-4A09-9699-B1071AC726EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D5978E0-6AD4-4A09-9699-B1071AC726EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D5978E0-6AD4-4A09-9699-B1071AC726EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47409435-044B-4552-8226-2E996098C351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47409435-044B-4552-8226-2E996098C351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47409435-044B-4552-8226-2E996098C351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47409435-044B-4552-8226-2E996098C351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17F5F37B-0F36-4A29-AF9D-C6DE150915CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17F5F37B-0F36-4A29-AF9D-C6DE150915CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17F5F37B-0F36-4A29-AF9D-C6DE150915CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17F5F37B-0F36-4A29-AF9D-C6DE150915CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02B9BCA5-701A-490F-91E2-02C582F81B01}
+	EndGlobalSection
+EndGlobal

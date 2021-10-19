@@ -1,0 +1,24 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GraphQL.Models
+{
+    /// <summary>
+    /// Product data model
+    /// </summary>
+    public class Product
+    {
+        [Key]
+        public int Id { get; set; }
+       
+        [Required]
+        public string Name { get; set; }
+
+        [Required]
+        public double Price { get; set; }
+
+        [Required]
+        public int OrderId { get; set; }
+
+        public Order Order { get; set; }
+    }
+}
