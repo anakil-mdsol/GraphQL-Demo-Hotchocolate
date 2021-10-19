@@ -1,6 +1,6 @@
 ﻿using GraphQL.Interfaces;
 using GraphQL.Models;
-using GraphQlApi.GraphQl.Types;
+using GraphQlApi.GraphQl.Types.InputTypes;
 using HotChocolate;
 using HotChocolate.Types;
 using System.Threading.Tasks;
@@ -16,7 +16,7 @@ namespace GraphQlApi.GraphQl.Mutations
             {
                Name = input.Name,
                Price = input.Price,
-               OrderId = input.OrderId,
+               OrderId = (int)input.OrderId,
             };
 
             await productService.AddProduct(product);

@@ -3,15 +3,14 @@ using HotChocolate.Types;
 using System;
 using System.Collections.Generic;
 
-namespace GraphQlApi.GraphQl.Types
+namespace GraphQlApi.GraphQl.Types.InputTypes
 {
-
     public class AddOrderInput
     {
         public string CustomerName { get; set; }
         public DateTime OrderDate { get; set; } 
         public double TotalAmount { get; set; }
-        public ICollection<Product> Products { get; set; } = new List<Product>();
+        public ICollection<AddProductInput> Products { get; set; } = new List<AddProductInput>();
     }
 
     public class AddOrderInputType : InputObjectType<AddOrderInput>

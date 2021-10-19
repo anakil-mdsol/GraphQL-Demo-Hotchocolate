@@ -1,12 +1,12 @@
 ﻿using HotChocolate.Types;
 
-namespace GraphQlApi.GraphQl.Types
+namespace GraphQlApi.GraphQl.Types.InputTypes
 {
     public class AddProductInput
     {
         public string Name { get; set; }
         public double Price { get; set; }
-        public int OrderId { get; set; }
+        public int? OrderId { get; set; }
     }
 
     public class AddProductInputType : InputObjectType<AddProductInput>

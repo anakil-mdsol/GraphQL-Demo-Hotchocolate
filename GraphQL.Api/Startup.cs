@@ -2,7 +2,9 @@ using GraphQL.Data;
 using GraphQL.Interfaces;
 using GraphQL.Services;
 using GraphQlApi.GraphQl.Mutations;
+using GraphQlApi.GraphQl.Queries;
 using GraphQlApi.GraphQl.Types;
+using GraphQlApi.GraphQl.Types.InputTypes;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -28,9 +30,9 @@ namespace GraphQlApi
             services
                 .AddGraphQLServer()
 
-                //.AddQueryType(d => d.Name("Query"))
-                //.AddTypeExtension<ProductQuery>()
-                //.AddTypeExtension<OrderQuery>()
+                .AddQueryType(d => d.Name("Query"))
+                .AddTypeExtension<ProductQuery>()
+                .AddTypeExtension<OrderQuery>()
 
                 .AddMutationType(d => d.Name("Mutation"))
                 .AddTypeExtension<ProductMutation>()
@@ -74,8 +76,6 @@ namespace GraphQlApi
             appDbContext.Database.EnsureCreated();
 
             app.UseGraphQLVoyager("/ui/voyager");
-            //app.UseGraphiQl("/graphql");
-            //app.UseGraphQL<ISchema>();
         }
     }
 }
