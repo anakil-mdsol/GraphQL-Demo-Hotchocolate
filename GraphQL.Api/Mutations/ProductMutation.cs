@@ -14,9 +14,9 @@ namespace GraphQlApi.GraphQl.Mutations
         {
             var product = new Product
             {
-               Name = input.Name,
-               Price = input.Price,
-               OrderId = (int)input.OrderId,
+                Name = input.Name,
+                Price = input.Price,
+                OrderId = (int)input.OrderId,
             };
 
             await productService.AddProduct(product);

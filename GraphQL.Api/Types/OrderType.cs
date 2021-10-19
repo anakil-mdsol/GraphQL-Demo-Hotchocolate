@@ -14,7 +14,7 @@ namespace GraphQlApi.GraphQl.Types
 
             descriptor
                 .Field(o => o.Products)
-                .ResolveWith<Resolvers>(o=>o.GetProductByOderId(default!,default!))
+                .ResolveWith<Resolvers>(o => o.GetProductByOderId(default!, default!))
                 .Description("This is the list of all ordered products");
         }
 

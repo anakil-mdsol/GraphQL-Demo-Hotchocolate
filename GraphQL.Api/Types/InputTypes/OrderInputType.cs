@@ -1,5 +1,4 @@
-﻿using GraphQL.Models;
-using HotChocolate.Types;
+﻿using HotChocolate.Types;
 using System;
 using System.Collections.Generic;
 
@@ -8,7 +7,7 @@ namespace GraphQlApi.GraphQl.Types.InputTypes
     public class AddOrderInput
     {
         public string CustomerName { get; set; }
-        public DateTime OrderDate { get; set; } 
+        public DateTime OrderDate { get; set; }
         public double TotalAmount { get; set; }
         public ICollection<AddProductInput> Products { get; set; } = new List<AddProductInput>();
     }
@@ -28,7 +27,7 @@ namespace GraphQlApi.GraphQl.Types.InputTypes
             descriptor
                 .Field(c => c.TotalAmount)
                 .Description("Represents the TotalAmount.");
-            
+
             descriptor
                 .Field(c => c.Products)
                 .Description("Represents the Products.");

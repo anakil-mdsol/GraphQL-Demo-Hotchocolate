@@ -13,6 +13,7 @@ namespace GraphQlApi.GraphQl.Queries
         {
             return prouctService.GetAllProducts();
         }
+
         public Product GetProduct([Service] IProduct prouctService, int id)
         {
             return prouctService.GetProductById(id);
