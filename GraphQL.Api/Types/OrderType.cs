@@ -10,6 +10,7 @@ namespace GraphQlApi.GraphQl.Types
     {
         protected override void Configure(IObjectTypeDescriptor<Order> descriptor)
         {
+
             descriptor.Description("Graphql : Order Type");
 
             descriptor
